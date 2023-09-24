@@ -1,0 +1,128 @@
+.container {
+    max-width: 940px;
+    margin: auto;
+}
+header {
+    padding: 37px 15px 24px 15px;
+    background: linear-gradient(#d5d5d5, #fff, #fff, #fff, #fff );
+    text-align: center;
+}
+#logo img { width: 200px }
+#menu li {
+    font: .7em Tahoma;
+    color: #b7b7b7;
+    padding: 0 10px 7px 10px;
+}
+#menu li a {
+    display: block;
+    font: bold .9rem Georgia;
+    color: #666;
+    text-transform: uppercase;
+}
+main {
+    min-height: 1280px;
+    background: #fff url('../img/mainbg.jpg') repeat-x;
+    padding: 22px 0 0 0;
+}
+#slider {
+    height: 340px;
+    border: 1px solid #c6c6c6;
+    border-radius: 8px;
+    background: url('../img/slider1.jpg') center/cover;
+}
+h1 {
+    font: bold 1.5em Georgia;
+    color: #000;
+    text-align: center;
+    padding: 1em 0;
+}
+
+hr{
+    border-top: 1px solid #e5e5e5;
+}
+
+
+.row{
+    padding: 20px 0;
+}
+
+.col{
+    padding: 10px;
+}
+
+
+article .col h2{
+    font: 1.3em Georgia;
+    color: #11719e;
+}
+
+article .col h6{
+    font: .75em Helvetica;
+    color: #8c8c8c;
+
+}
+
+article .col  p{
+
+    font: .8em/1.5 Helvetica;
+    color: #3e3e3e;
+}
+
+article .col img{
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    background: #f3f3f3;
+    margin: 18px 0;
+}
+
+button{
+    border: 1px solid #d8d8d8;
+    border-radius: 4px;
+    font: .8em Helvetica;
+    width: 164px;
+    padding: 8px 12px;
+    text-align: left;
+    margin: 20px 0 0 0;
+}
+
+button span{
+    float: right;
+}
+
+.btn1{
+    color: #016999;
+    background: linear-gradient(to right, #d8d8d8,#f7f7f7,#e8e8e8,#eee);
+}
+
+footer {
+    height: 183px;
+    background: #333;
+    border-top: 10px solid #4c4c4c;
+}
+
+@media only screen and (min-width: 768px) {
+    header { text-align: initial; }
+    #logo img { width: 20%; }
+    #menu { 
+        float: right;
+        padding: 20px 0 0 0;
+    }
+    #menu li { 
+        display: inline-block;
+        border-left: 1px dotted #d6d6d6;
+    }
+
+    .col{
+        width: 33.33%;
+        float: left;
+       
+    }
+
+    .col::after{
+        display: table;
+        content: '';
+        clear: both;
+    }
+}
