@@ -7,18 +7,22 @@ header {
     background: linear-gradient(#d5d5d5, #fff, #fff, #fff, #fff );
     text-align: center;
 }
+
 #logo img { width: 200px }
+
 #menu li {
     font: .7em Tahoma;
     color: #b7b7b7;
     padding: 0 10px 7px 10px;
 }
+
 #menu li a {
     display: block;
     font: bold .9rem Georgia;
     color: #666;
     text-transform: uppercase;
 }
+
 main {
     min-height: 1280px;
     background: #fff url('../img/mainbg.jpg') repeat-x;
@@ -30,6 +34,7 @@ main {
     border-radius: 8px;
     background: url('../img/slider1.jpg') center/cover;
 }
+
 h1 {
     font: bold 1.5em Georgia;
     color: #000;
@@ -41,15 +46,13 @@ hr{
     border-top: 1px solid #e5e5e5;
 }
 
-
 .row{
     padding: 20px 0;
 }
 
 .col{
-    padding: 10px;
+    padding: 10px 10px 35px 10px;
 }
-
 
 article .col h2{
     font: 1.3em Georgia;
@@ -77,7 +80,8 @@ article .col img{
     margin: 18px 0;
 }
 
-button{
+article .col a{
+    display: inline-block;
     border: 1px solid #d8d8d8;
     border-radius: 4px;
     font: .8em Helvetica;
@@ -85,9 +89,10 @@ button{
     padding: 8px 12px;
     text-align: left;
     margin: 20px 0 0 0;
+    cursor: pointer;
 }
 
-button span{
+.col a span{
     float: right;
 }
 
@@ -96,10 +101,165 @@ button span{
     background: linear-gradient(to right, #d8d8d8,#f7f7f7,#e8e8e8,#eee);
 }
 
+.social h3{
+    font: 1.2em Georgia;
+    color: #444;
+    border-bottom: 1px dashed #d3d3d3;
+    padding-bottom: 6px;
+}
+
+.social h5{
+    margin-top: 13px;
+    font: .75em Helvetica;
+    color: #444;
+}
+
+.social .button{
+    display: inline-block;
+    border-radius: 7px;
+    box-shadow: 1px 1px 3px #333;
+    width: 50px;
+    height: 50px;
+    margin-right: 6px;
+    background: url('/img/icons.png') 0 50px;
+}
+
+#icons{margin-top: 13px;}
+
+#icons a:last-child { margin-right: 0; }
+
+#rs { background-position: 0 0 }
+#fb { background-position: -50px 0 }
+#li { background-position: -100px 0 }
+#yt { background-position: -150px 0 }
+#tw { background-position: -200px 0 }
+
+#rs:hover { background-position: 0 -50px }
+#fb:hover { background-position: -50px -50px }
+#li:hover { background-position: -100px -50px }
+#yt:hover { background-position: -150px -50px }
+#tw:hover { background-position: -200px -50px }
+
+.social h4{
+    margin-top: 30px;
+    font: bold 1.1em "sans";
+    color: #444;
+    border-bottom: 1px dashed #d3d3d3;
+    padding-bottom: 6px;
+}
+
+.social input{
+    margin-top: 11px;
+    width: 100%;
+    height: 33px;
+    border: 1px solid #cfcfcf;
+    border-radius: 4px;
+    padding: 11px 13px;
+    outline: none;
+}
+
+.social input::placeholder {
+    font: .63em Verdana;
+    color: #d4d4d4;
+}
+
+.btn2 {
+    display: inline-block;
+    border: 1px solid #d8d8d8;
+    border-radius: 4px;
+    font: 0.8em Helvetica;
+    width: 164px;
+    padding: 8px 12px;
+    text-align: left;
+    margin: 20px 0 0 0;
+    cursor: pointer;
+    border-color: #004a80;
+    color: #fff;
+    background: linear-gradient(to right, #477bb0, #3d78b5, #2f6092, #306193);
+}
+
+.contact h3{
+    font: 1.2em Georgia;
+    color: #444;
+    border-bottom: 1px dashed #d3d3d3;
+    padding-bottom: 6px;
+    margin-bottom: 11px;
+}
+
+.contact input{
+    margin: 0 0 18px 0;
+    width: 100%;
+    height: 33px;
+    border: 1px solid #cfcfcf;
+    border-radius: 4px;
+    padding: 11px 13px;
+    outline: none;
+}
+
+.contact input::placeholder {
+    font: .63em Verdana;
+    color: #d4d4d4;
+}
+
+
+.contact textarea{
+    margin-top: 3px;
+    width: 100%;
+    border: 1px solid #cfcfcf;
+    box-shadow: 1px ;
+    border-radius: 4px;
+    padding: 11px 13px;
+    outline: none;
+    min-height: 134px;
+    resize:vertical;
+}
+
+.contact textarea::placeholder {
+    font: .63em Verdana;
+    color: #d4d4d4;
+}
+
+.contact .btn2{
+    margin: 17px 0 0 0;
+}
+
+.newslist h3{
+    font: 1.2em Georgia;
+    color: #444;
+    border-bottom: 1px dashed #d3d3d3;
+    padding-bottom: 6px;
+}
+
+.news{
+    padding:14px 0 10px 0;
+    border-bottom: 1px dashed #d3d3d3;
+}
+
+.news img{
+    float: left;
+    padding: 5px 4px;
+    border-radius: 4px;
+    border: 1px solid #cfcfcf;
+    background: #f0f0f0;
+    margin-right: 8px;
+}
+
+.news p{
+    font: .75em Helvetica;
+    color: #444;
+}
+
+.news p::after{
+    display: table;
+    content: '';
+    clear: both;
+}
+
 footer {
     height: 183px;
     background: #333;
     border-top: 10px solid #4c4c4c;
+    clear: both;
 }
 
 @media only screen and (min-width: 768px) {
